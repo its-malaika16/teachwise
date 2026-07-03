@@ -1,0 +1,184 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.comparison-section {
+  padding: 100px 20px;
+  background: #f6f5f4;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.comparison-header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.comparison-tag {
+  display: block;
+
+  color: #e56d7e;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  margin-bottom: 15px;
+}
+
+.comparison-header h2 {
+  color: #14384d;
+
+  font-size: 64px;
+  line-height: 1.1;
+}
+
+/* ========================= */
+/* TABLE WRAPPER */
+/* ========================= */
+
+.comparison-table-wrapper {
+  max-width: 1100px;
+  margin: auto;
+
+  overflow-x: auto;
+
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ========================= */
+/* TABLE */
+/* ========================= */
+
+.comparison-table {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 700px;
+}
+
+/* HEADER */
+
+.comparison-table thead {
+  background: #14384d;
+}
+
+.comparison-table th {
+  color: white;
+
+  text-align: left;
+  padding: 20px;
+
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.comparison-table th:nth-child(2),
+.comparison-table th:nth-child(3),
+.comparison-table td:nth-child(2),
+.comparison-table td:nth-child(3) {
+  text-align: center;
+}
+
+/* ROWS */
+
+.comparison-table tbody tr:nth-child(odd) {
+  background: #ffffff;
+}
+
+.comparison-table tbody tr:nth-child(even) {
+  background: #f1f1f1;
+}
+
+.comparison-table td {
+  padding: 18px 20px;
+
+  color: #14384d;
+  font-size: 15px;
+}
+
+/* ICONS */
+
+.check {
+  color: #e56d7e;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.cross {
+  color: #ff4d4d;
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* ========================= */
+/* LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .comparison-header h2 {
+    font-size: 52px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .comparison-section {
+    padding: 80px 20px;
+  }
+
+  .comparison-header h2 {
+    font-size: 44px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .comparison-section {
+    padding: 70px 16px;
+  }
+
+  .comparison-header {
+    margin-bottom: 40px;
+  }
+
+  .comparison-header h2 {
+    font-size: 34px;
+  }
+
+  .comparison-table th,
+  .comparison-table td {
+    padding: 16px;
+    font-size: 14px;
+  }
+
+  .comparison-table {
+    min-width: 600px;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .comparison-header h2 {
+    font-size: 28px;
+  }
+
+  .comparison-tag {
+    font-size: 11px;
+  }
+
+  .comparison-table {
+    min-width: 550px;
+  }
+}

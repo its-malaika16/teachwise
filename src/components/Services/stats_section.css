@@ -1,0 +1,158 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.stats-section {
+  background: #143f57;
+  padding: 70px 20px;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.stats-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.stat-card {
+  text-align: center;
+  color: white;
+
+  transition: all 0.3s ease;
+}
+
+.stat-card:hover {
+  transform: translateY(-5px);
+}
+
+/* ========================= */
+/* ICON */
+/* ========================= */
+
+.stat-icon {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 18px;
+
+  color: #ef6479;
+}
+
+.stat-icon svg {
+  width: 30px;
+  height: 30px;
+
+  stroke-width: 2;
+}
+
+/* ========================= */
+/* NUMBER */
+/* ========================= */
+
+.stat-card h3 {
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1;
+
+  margin-bottom: 10px;
+}
+
+/* ========================= */
+/* LABEL */
+/* ========================= */
+
+.stat-card p {
+  color: rgba(255, 255, 255, 0.85);
+
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* ========================= */
+/* LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .stat-card h3 {
+    font-size: 48px;
+  }
+
+  .stat-card p {
+    font-size: 16px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .stats-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 50px 30px;
+  }
+
+  .stat-card h3 {
+    font-size: 42px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .stats-section {
+    padding: 60px 16px;
+  }
+
+  .stats-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .stat-card h3 {
+    font-size: 38px;
+  }
+
+  .stat-card p {
+    font-size: 15px;
+  }
+
+  .stat-icon svg {
+    width: 28px;
+    height: 28px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .stats-section {
+    padding: 50px 16px;
+  }
+
+  .stat-card h3 {
+    font-size: 34px;
+  }
+
+  .stat-card p {
+    font-size: 14px;
+  }
+
+  .stat-icon svg {
+    width: 25px;
+    height: 25px;
+  }
+}

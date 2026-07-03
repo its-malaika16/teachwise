@@ -1,0 +1,266 @@
+/* ============================== */
+/* FOOTER */
+/* ============================== */
+
+.custom-footer {
+  background: #0f4660;
+  color: #fff;
+
+  padding: 60px 20px 30px;
+}
+
+.footer-container {
+  max-width: 1250px;
+  margin: auto;
+}
+
+/* ============================== */
+/* TOP */
+/* ============================== */
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  gap: 80px;
+
+  padding-bottom: 40px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-about {
+  max-width: 400px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  margin-bottom: 20px;
+}
+
+.footer-logo img {
+  width: 34px;
+}
+
+.footer-logo span {
+  font-size: 34px;
+  font-weight: 700;
+}
+
+.footer-about p {
+  color: rgba(255,255,255,.72);
+  line-height: 1.9;
+  margin-bottom: 28px;
+}
+
+/* ============================== */
+/* SOCIAL */
+/* ============================== */
+
+.footer-socials {
+  display: flex;
+  gap: 12px;
+}
+
+.footer-socials a {
+  width: 42px;
+  height: 42px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.15);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+
+  transition: .3s;
+}
+
+.footer-socials a:hover {
+  background: #e55f75;
+  border-color: #e55f75;
+}
+
+.footer-socials svg {
+  width: 18px;
+  height: 18px;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+/* ============================== */
+/* LINKS */
+/* ============================== */
+
+.footer-links {
+  display: flex;
+  gap: 90px;
+}
+
+.footer-column h4 {
+  margin-bottom: 22px;
+  font-size: 22px;
+}
+
+.footer-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-column a {
+  color: rgba(255,255,255,.72);
+  text-decoration: none;
+
+  margin-bottom: 14px;
+}
+
+.footer-column a:hover {
+  color: #fff;
+}
+
+/* ============================== */
+/* CONTACT BAR */
+/* ============================== */
+
+.footer-contact-bar {
+  padding: 32px 0;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  color: rgba(255,255,255,.85);
+}
+
+.footer-contact-item svg {
+  width: 20px;
+  height: 20px;
+
+  color: #e55f75;
+
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+
+  flex-shrink: 0;
+}
+
+/* ============================== */
+/* BOTTOM */
+/* ============================== */
+
+.footer-bottom {
+  padding-top: 25px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+}
+
+.footer-bottom p {
+  color: rgba(255,255,255,.65);
+  font-size: 14px;
+}
+
+.footer-bottom-links {
+  display: flex;
+  gap: 24px;
+}
+
+.footer-bottom-links a {
+  color: rgba(255,255,255,.65);
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* ============================== */
+/* TABLET */
+/* ============================== */
+
+@media (max-width: 992px) {
+
+  .footer-top {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .footer-links {
+    justify-content: space-between;
+    gap: 40px;
+  }
+
+  .footer-contact-bar {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* ============================== */
+/* MOBILE */
+/* ============================== */
+
+@media (max-width: 768px) {
+
+  .custom-footer {
+    padding: 50px 16px 25px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .footer-logo span {
+    font-size: 28px;
+  }
+
+  .footer-column h4 {
+    font-size: 20px;
+  }
+}
+
+/* ============================== */
+/* SMALL MOBILE */
+/* ============================== */
+
+@media (max-width: 480px) {
+
+  .footer-socials {
+    flex-wrap: wrap;
+  }
+
+  .footer-contact-item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .footer-bottom-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-about p,
+  .footer-column a,
+  .footer-contact-item,
+  .footer-bottom p {
+    font-size: 14px;
+  }
+}

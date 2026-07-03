@@ -1,0 +1,186 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.platform-section {
+  background: #f6f5f4;
+  padding: 100px 20px;
+}
+
+.platform-container {
+  max-width: 1400px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+/* ========================= */
+/* LEFT */
+/* ========================= */
+
+.platform-text {
+  flex: 1;
+  max-width: 650px;
+}
+
+.section-tag {
+  display: inline-block;
+
+  color: #ea6376;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 3px;
+
+  margin-bottom: 25px;
+}
+
+.platform-text h2 {
+  font-size: 62px;
+  line-height: 1.1;
+
+  color: #173f55;
+  margin-bottom: 30px;
+}
+
+.platform-text p {
+  color: #668294;
+
+  font-size: 18px;
+  line-height: 1.9;
+
+  margin-bottom: 25px;
+}
+
+/* ========================= */
+/* RIGHT */
+/* ========================= */
+
+.platform-image {
+  flex: 1;
+  position: relative;
+
+  display: flex;
+  justify-content: center;
+}
+
+.laptop-image {
+  width: 100%;
+  max-width: 700px;
+
+  display: block;
+}
+
+/* .mobile-image {
+  position: absolute;
+
+  bottom: -20px;
+  right: 20px;
+
+  width: 180px;
+
+  filter: drop-shadow(
+    0 15px 25px rgba(0,0,0,0.15)
+  );
+} */
+
+/* ========================= */
+/* LARGE LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+
+  .platform-text h2 {
+    font-size: 50px;
+  }
+
+  .platform-container {
+    gap: 50px;
+  }
+
+  /* .mobile-image {
+    width: 150px;
+  } */
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+
+  .platform-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .platform-text {
+    max-width: 100%;
+  }
+
+  .platform-text h2 {
+    font-size: 42px;
+  }
+
+  .platform-image {
+    width: 100%;
+  }
+
+  /* .mobile-image {
+    right: 50px;
+  } */
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .platform-section {
+    padding: 70px 16px;
+  }
+
+  .platform-text h2 {
+    font-size: 34px;
+  }
+
+  .platform-text p {
+    font-size: 16px;
+  }
+
+  /* .mobile-image {
+    width: 120px;
+    right: 15px;
+    bottom: -10px;
+  } */
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .platform-text h2 {
+    font-size: 28px;
+  }
+
+  .platform-text p {
+    font-size: 15px;
+  }
+
+  /* .mobile-image {
+    width: 90px;
+    right: 0;
+    bottom: -5px;
+  } */
+
+  .section-tag {
+    font-size: 11px;
+  }
+}

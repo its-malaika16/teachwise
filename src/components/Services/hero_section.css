@@ -1,0 +1,303 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.services-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.04),
+      transparent 60%
+    ),
+    linear-gradient(
+      135deg,
+      #103f58,
+      #194968
+    );
+
+  color: white;
+
+  padding: 120px 20px;
+  min-height: 520px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ========================= */
+/* DOTTED BACKGROUND */
+/* ========================= */
+
+.services-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.12) 1px,
+      transparent 1px
+    );
+
+  background-size: 26px 26px;
+
+  opacity: 0.5;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.services-hero-content {
+  position: relative;
+  z-index: 2;
+
+  max-width: 1000px;
+  text-align: center;
+}
+
+/* ========================= */
+/* TAG */
+/* ========================= */
+
+.services-tag-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+
+  margin-bottom: 25px;
+}
+
+.line {
+  width: 38px;
+  height: 1px;
+
+  background: rgba(240, 88, 106, 0.5);
+}
+
+.services-tag {
+  color: #f0586a;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 4px;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.services-hero h1 {
+  font-size: 82px;
+  line-height: 1.05;
+
+  font-weight: 800;
+
+  margin-bottom: 28px;
+}
+
+.services-hero h1 span {
+  color: #f0586a;
+}
+
+/* ========================= */
+/* DESCRIPTION */
+/* ========================= */
+
+.services-hero p {
+  max-width: 720px;
+  margin: auto;
+
+  color: rgba(255,255,255,0.8);
+
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/* ========================= */
+/* DECORATIVE SHAPES */
+/* ========================= */
+
+.shape {
+  position: absolute;
+  z-index: 1;
+}
+
+.shape-left {
+  top: 0;
+  left: 0;
+
+  width: 120px;
+  height: 120px;
+
+  background: rgba(111, 79, 124, 0.35);
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    0 100%
+  );
+}
+
+.shape-right {
+  right: 0;
+  bottom: 0;
+
+  width: 260px;
+  height: 260px;
+
+  background: rgba(240, 88, 106, 0.2);
+
+  clip-path: polygon(
+    100% 100%,
+    100% 0,
+    0 100%
+  );
+}
+
+/* CENTER CIRCLE */
+
+.circle-outline {
+  position: absolute;
+
+  bottom: -130px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 380px;
+  height: 380px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,0.08);
+
+  z-index: 1;
+}
+
+/* ========================= */
+/* LARGE LAPTOP */
+/* ========================= */
+
+@media (max-width: 1400px) {
+  .services-hero h1 {
+    font-size: 72px;
+  }
+}
+
+/* ========================= */
+/* LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .services-hero h1 {
+    font-size: 64px;
+  }
+
+  .services-hero p {
+    font-size: 20px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .services-hero {
+    min-height: 450px;
+    padding: 100px 30px;
+  }
+
+  .services-hero h1 {
+    font-size: 54px;
+  }
+
+  .services-hero p {
+    font-size: 18px;
+  }
+
+  .circle-outline {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .services-hero {
+    padding: 90px 20px;
+    min-height: auto;
+  }
+
+  .services-hero h1 {
+    font-size: 40px;
+  }
+
+  .services-hero p {
+    font-size: 16px;
+  }
+
+  .services-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .shape-right {
+    width: 180px;
+    height: 180px;
+  }
+
+  .circle-outline {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .services-hero {
+    padding: 80px 16px;
+  }
+
+  .services-hero h1 {
+    font-size: 32px;
+    line-height: 1.15;
+  }
+
+  .services-hero p {
+    font-size: 15px;
+  }
+
+  .line {
+    width: 25px;
+  }
+
+  .shape-left {
+    width: 70px;
+    height: 70px;
+  }
+
+  .shape-right {
+    width: 120px;
+    height: 120px;
+  }
+
+  .circle-outline {
+    width: 180px;
+    height: 180px;
+  }
+}

@@ -1,0 +1,279 @@
+.contact-section {
+  position: relative;
+
+  background:
+    linear-gradient(
+      rgba(18, 74, 101, 0.94),
+      rgba(18, 74, 101, 0.94)
+    ),
+    url("/assets/images/teacher-header1.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 100vh;
+
+  overflow: hidden;
+
+  color: white;
+
+  display: flex;
+  align-items: center;
+}
+
+.contact-overlay {
+  position: absolute;
+  inset: 0;
+
+  background:
+    linear-gradient(
+      to right,
+      rgba(18, 74, 101, 0.98) 45%,
+      rgba(18, 74, 101, 0.6)
+       rgba(13, 74, 103, 0.55) 100%
+    );
+
+  z-index: 1;
+}
+
+/* CONTAINER */
+
+.contact-container {
+  position: relative;
+  z-index: 2;
+
+  width: 100%;
+  max-width: 1200px;
+
+  margin: auto;
+  padding: 80px 20px;
+}
+
+/* CONTENT */
+
+.contact-content {
+  max-width: 650px;
+}
+
+/* TAG */
+
+.contact-tag {
+  display: block;
+
+  color: #ef6479;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin-bottom: 18px;
+}
+
+/* TITLE */
+
+.contact-content h2 {
+  font-size: 72px;
+  line-height: 1.05;
+
+  margin-bottom: 24px;
+}
+
+/* DESCRIPTION */
+
+.contact-content p {
+  max-width: 650px;
+
+  color: #d7e2ea;
+
+  line-height: 1.8;
+  font-size: 20px;
+
+  margin-bottom: 35px;
+}
+
+/* FORM */
+
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  max-width: 520px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+
+  padding: 16px 18px;
+
+  border-radius: 10px;
+
+  border: 1px solid rgba(255,255,255,0.2);
+
+  background: rgba(255,255,255,0.12);
+
+  color: white;
+
+  font-size: 15px;
+
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: rgba(255,255,255,0.6);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+/* BUTTON */
+
+.contact-form button {
+  border: none;
+
+  padding: 16px;
+
+  border-radius: 10px;
+
+  background: #d95f74;
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: 0.3s;
+}
+
+.contact-form button:hover {
+  transform: translateY(-2px);
+
+  box-shadow:
+    0 10px 25px rgba(217,95,116,0.35);
+}
+
+/* CONTACT INFO */
+
+.contact-details {
+  display: flex;
+  gap: 30px;
+
+  margin-top: 35px;
+  flex-wrap: wrap;
+}
+
+.contact-item,
+.contact-address {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  color: #d7e2ea;
+}
+
+.contact-item svg,
+.contact-address svg {
+  color: #ef6479;
+  flex-shrink: 0;
+}
+
+.contact-address {
+  margin-top: 20px;
+}
+
+/* ========================= */
+/* LARGE DESKTOP */
+/* ========================= */
+
+@media (max-width: 1400px) {
+  .contact-content h2 {
+    font-size: 60px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .contact-section {
+    min-height: auto;
+  }
+
+  .contact-content h2 {
+    font-size: 52px;
+  }
+
+  .contact-content p {
+    font-size: 18px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .contact-container {
+    padding: 70px 16px;
+  }
+
+  .contact-content {
+    max-width: 100%;
+  }
+
+  .contact-content h2 {
+    font-size: 40px;
+  }
+
+  .contact-content p {
+    font-size: 16px;
+  }
+
+  .contact-form {
+    max-width: 100%;
+  }
+
+  .contact-details {
+    flex-direction: column;
+    gap: 14px;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .contact-content h2 {
+    font-size: 32px;
+  }
+
+  .contact-content p {
+    font-size: 15px;
+  }
+
+  .contact-tag {
+    font-size: 11px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    padding: 14px;
+  }
+
+  .contact-form button {
+    padding: 14px;
+  }
+
+  .contact-address,
+  .contact-item {
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,259 @@
+/* ================================= */
+/* SECTION */
+/* ================================= */
+
+.reporting-analysis-section {
+  background: #f7f6f4;
+  padding: 110px 20px;
+}
+
+.reporting-analysis-container {
+  max-width: 1250px;
+  margin: 0 auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+/* ================================= */
+/* LEFT CONTENT */
+/* ================================= */
+
+.reporting-analysis-content {
+  flex: 1;
+  max-width: 560px;
+}
+
+.reporting-analysis-tag {
+  display: block;
+
+  color: #ea6376;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  letter-spacing: 2px;
+
+  margin-bottom: 20px;
+}
+
+.reporting-analysis-content h2 {
+  color: #0d3d58;
+
+  font-size: 68px;
+  font-weight: 700;
+
+  line-height: 1.05;
+
+  margin-bottom: 28px;
+}
+
+.reporting-analysis-content p {
+  color: #698193;
+
+  font-size: 20px;
+  line-height: 1.9;
+}
+
+/* ================================= */
+/* CARD */
+/* ================================= */
+
+.reporting-analysis-card {
+  flex: 1;
+  max-width: 580px;
+
+  background: #ffffff;
+
+  border: 1px solid #dce4eb;
+  border-radius: 18px;
+
+  padding: 32px;
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.reporting-analysis-card h3 {
+  color: #0d3d58;
+
+  font-size: 34px;
+  font-weight: 700;
+
+  margin-bottom: 28px;
+}
+
+/* ================================= */
+/* LIST */
+/* ================================= */
+
+.reporting-analysis-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reporting-analysis-card li {
+  display: flex;
+  align-items: center;
+
+  gap: 14px;
+
+  margin-bottom: 18px;
+
+  color: #0d3d58;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+.reporting-check {
+  width: 20px;
+  height: 20px;
+
+  border-radius: 50%;
+  border: 1.5px solid #ea6376;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ea6376;
+
+  font-size: 11px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+/* ================================= */
+/* LARGE LAPTOP */
+/* ================================= */
+
+@media (max-width: 1200px) {
+  .reporting-analysis-content h2 {
+    font-size: 56px;
+  }
+
+  .reporting-analysis-card h3 {
+    font-size: 30px;
+  }
+
+  .reporting-analysis-card li {
+    font-size: 16px;
+  }
+}
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width: 992px) {
+  .reporting-analysis-section {
+    padding: 90px 20px;
+  }
+
+  .reporting-analysis-container {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .reporting-analysis-content {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .reporting-analysis-content h2 {
+    font-size: 46px;
+  }
+
+  .reporting-analysis-content p {
+    font-size: 18px;
+  }
+
+  .reporting-analysis-card {
+    max-width: 720px;
+    width: 100%;
+  }
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 768px) {
+  .reporting-analysis-section {
+    padding: 70px 16px;
+  }
+
+  .reporting-analysis-content h2 {
+    font-size: 36px;
+  }
+
+  .reporting-analysis-content p {
+    font-size: 16px;
+  }
+
+  .reporting-analysis-card {
+    padding: 24px;
+  }
+
+  .reporting-analysis-card h3 {
+    font-size: 24px;
+  }
+
+  .reporting-analysis-card li {
+    font-size: 15px;
+    gap: 10px;
+  }
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width: 480px) {
+  .reporting-analysis-content h2 {
+    font-size: 30px;
+  }
+
+  .reporting-analysis-content p {
+    font-size: 15px;
+  }
+
+  .reporting-analysis-tag {
+    font-size: 11px;
+  }
+
+  .reporting-analysis-card {
+    padding: 20px;
+  }
+
+  .reporting-analysis-card h3 {
+    font-size: 22px;
+  }
+
+  .reporting-analysis-card li {
+    font-size: 14px;
+    align-items: flex-start;
+  }
+}
+
+/* ================================= */
+/* EXTRA SMALL */
+/* ================================= */
+
+@media (max-width: 360px) {
+  .reporting-analysis-content h2 {
+    font-size: 26px;
+  }
+
+  .reporting-analysis-card h3 {
+    font-size: 20px;
+  }
+
+  .reporting-analysis-card li {
+    font-size: 13px;
+  }
+}

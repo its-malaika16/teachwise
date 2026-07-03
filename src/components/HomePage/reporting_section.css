@@ -1,0 +1,224 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.reporting-section {
+  background: #f5f4f3;
+  padding: 100px 20px;
+}
+
+/* ========================= */
+/* CONTAINER */
+/* ========================= */
+
+.reporting-container {
+  max-width: 1200px;
+  margin: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  gap: 80px;
+}
+
+/* ========================= */
+/* LEFT CONTENT */
+/* ========================= */
+
+.reporting-content {
+  flex: 1;
+  max-width: 550px;
+}
+
+.reporting-tag {
+  display: block;
+
+  color: #ea6376;
+
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 2px;
+
+  margin-bottom: 20px;
+}
+
+.reporting-content h2 {
+  color: #173f55;
+
+  font-size: 64px;
+  line-height: 1.1;
+
+  margin-bottom: 30px;
+}
+
+.reporting-content p {
+  color: #668294;
+
+  font-size: 20px;
+  line-height: 1.8;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.reports-card {
+  flex: 1;
+
+  background: #fff;
+
+  padding: 35px;
+
+  border-radius: 16px;
+
+  border: 1px solid #e4eaee;
+
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+.reports-card h3 {
+  color: #173f55;
+  font-size: 32px;
+
+  margin-bottom: 30px;
+}
+
+/* ========================= */
+/* LIST */
+/* ========================= */
+
+.reports-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.reports-card li {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 10px 0;
+
+  color: #2f5164;
+  font-size: 16px;
+}
+
+.check-icon {
+  width: 18px;
+  height: 18px;
+
+  border: 1px solid #ea6376;
+  border-radius: 50%;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: #ea6376;
+
+  font-size: 11px;
+  flex-shrink: 0;
+}
+
+/* ========================= */
+/* LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .reporting-content h2 {
+    font-size: 54px;
+  }
+
+  .reporting-container {
+    gap: 50px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .reporting-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .reporting-content {
+    max-width: 100%;
+  }
+
+  .reporting-content h2 {
+    font-size: 46px;
+  }
+
+  .reports-card {
+    width: 100%;
+    max-width: 700px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .reporting-section {
+    padding: 70px 16px;
+  }
+
+  .reporting-content h2 {
+    font-size: 36px;
+  }
+
+  .reporting-content p {
+    font-size: 16px;
+  }
+
+  .reports-card {
+    padding: 24px;
+  }
+
+  .reports-card h3 {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .reports-card li {
+    font-size: 15px;
+    text-align: left;
+  }
+}
+
+/* ========================= */
+/* SMALL PHONES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .reporting-content h2 {
+    font-size: 30px;
+  }
+
+  .reporting-content p {
+    font-size: 15px;
+  }
+
+  .reporting-tag {
+    font-size: 11px;
+  }
+
+  .reports-card {
+    padding: 20px;
+  }
+
+  .reports-card h3 {
+    font-size: 22px;
+  }
+
+  .reports-card li {
+    font-size: 14px;
+  }
+}

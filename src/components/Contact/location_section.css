@@ -1,0 +1,231 @@
+/* ================================= */
+/* SECTION */
+/* ================================= */
+
+.findus-section {
+  background: #f8f7f5;
+  padding: 90px 20px;
+}
+
+.findus-container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+/* ================================= */
+/* HEADER */
+/* ================================= */
+
+.findus-header {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.findus-header h2 {
+  color: #0d3d58;
+
+  font-size: 54px;
+  font-weight: 700;
+
+  margin: 0;
+}
+
+/* ================================= */
+/* MAP CARD */
+/* ================================= */
+
+.findus-map-card {
+  position: relative;
+
+  max-width: 900px;
+  margin: 0 auto;
+
+  border-radius: 18px;
+  overflow: hidden;
+
+  border: 1px solid #d3dee6;
+
+  box-shadow:
+    0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.findus-map-card iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+  display: block;
+}
+
+/* ================================= */
+/* LOCATION CARD */
+/* ================================= */
+
+.findus-overlay {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+}
+
+.findus-location-card {
+  background: white;
+
+  padding: 18px;
+
+  border-radius: 12px;
+
+  width: 250px;
+
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.12);
+}
+
+.findus-location-card h3 {
+  color: #0d3d58;
+
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-bottom: 10px;
+}
+
+.findus-location-card p {
+  color: #697f91;
+
+  font-size: 14px;
+  line-height: 1.7;
+
+  margin-bottom: 14px;
+}
+
+/* ================================= */
+/* BUTTON */
+/* ================================= */
+
+.findus-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+
+  text-decoration: none;
+
+  background: #e25d74;
+  color: #fff;
+
+  padding: 10px 14px;
+
+  border-radius: 8px;
+
+  font-size: 13px;
+  font-weight: 600;
+
+  transition: all 0.3s ease;
+}
+
+.findus-btn:hover {
+  background: #d84f68;
+
+  transform: translateY(-2px);
+}
+
+/* ================================= */
+/* LAPTOP */
+/* ================================= */
+
+@media (max-width: 1200px) {
+  .findus-header h2 {
+    font-size: 48px;
+  }
+}
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width: 992px) {
+  .findus-section {
+    padding: 80px 20px;
+  }
+
+  .findus-header h2 {
+    font-size: 42px;
+  }
+
+  .findus-map-card iframe {
+    height: 400px;
+  }
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 768px) {
+  .findus-section {
+    padding: 70px 16px;
+  }
+
+  .findus-header h2 {
+    font-size: 34px;
+  }
+
+  .findus-map-card iframe {
+    height: 350px;
+  }
+
+  .findus-overlay {
+    position: static;
+  }
+
+  .findus-location-card {
+    width: 100%;
+    border-radius: 0;
+
+    box-shadow: none;
+
+    border-bottom: 1px solid #e4eaee;
+  }
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width: 480px) {
+  .findus-header h2 {
+    font-size: 28px;
+  }
+
+  .findus-location-card {
+    padding: 16px;
+  }
+
+  .findus-location-card h3 {
+    font-size: 16px;
+  }
+
+  .findus-location-card p {
+    font-size: 13px;
+  }
+
+  .findus-btn {
+    width: 100%;
+  }
+
+  .findus-map-card iframe {
+    height: 300px;
+  }
+}
+
+/* ================================= */
+/* EXTRA SMALL */
+/* ================================= */
+
+@media (max-width: 360px) {
+  .findus-header h2 {
+    font-size: 24px;
+  }
+
+  .findus-map-card iframe {
+    height: 260px;
+  }
+}

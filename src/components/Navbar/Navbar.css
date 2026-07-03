@@ -1,0 +1,204 @@
+/* ========================= */
+/* NAVBAR */
+/* ========================= */
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 70px;
+
+  z-index: 1000;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 0 8%;
+
+  background: #123d53;
+}
+
+/* ========================= */
+/* LOGO */
+/* ========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+}
+
+.logo img {
+  width: 34px;
+  height: 34px;
+}
+
+.logo span {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* ========================= */
+/* MENU */
+/* ========================= */
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 38px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  color: #d3dde3;
+
+  font-size: 14px;
+  font-weight: 500;
+
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  color: white;
+}
+
+.nav-menu a.active {
+  color: white;
+}
+
+/* ========================= */
+/* CTA BUTTON */
+/* ========================= */
+
+.nav-cta {
+  background: #e76b7d;
+
+  color: white;
+  text-decoration: none;
+
+  padding: 12px 22px;
+
+  border-radius: 14px;
+
+  font-size: 14px;
+  font-weight: 600;
+
+  transition: 0.3s;
+}
+
+.nav-cta:hover {
+  transform: translateY(-2px);
+}
+
+/* ========================= */
+/* HAMBURGER */
+/* ========================= */
+
+.menu-btn {
+  display: none;
+
+  background: transparent;
+  border: none;
+
+  color: white;
+  font-size: 28px;
+
+  cursor: pointer;
+}
+
+/* ========================= */
+/* MOBILE CTA */
+/* ========================= */
+
+.mobile-cta {
+  display: none;
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 1024px) {
+  .navbar {
+    padding: 0 5%;
+  }
+
+  .nav-menu {
+    gap: 24px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+
+  .menu-btn {
+    display: block;
+  }
+
+  .desktop-cta {
+    display: none;
+  }
+
+  .nav-menu {
+    position: fixed;
+
+    top: 70px;
+    left: -100%;
+
+    width: 100%;
+    height: calc(100vh - 70px);
+
+    background: #123d53;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+
+    gap: 24px;
+
+    padding-top: 40px;
+
+    transition: 0.3s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-menu a {
+    font-size: 18px;
+  }
+
+  .mobile-cta {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}
+
+/* ========================= */
+/* SMALL DEVICES */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .navbar {
+    height: 65px;
+  }
+
+  .logo span {
+    font-size: 14px;
+  }
+
+  .logo img {
+    width: 28px;
+    height: 28px;
+  }
+}

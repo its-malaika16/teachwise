@@ -1,0 +1,323 @@
+/* ================================= */
+/* SECTION */
+/* ================================= */
+
+.reporting-hero {
+  position: relative;
+  overflow: hidden;
+
+  min-height: 560px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 20px;
+
+  background: linear-gradient(
+    135deg,
+    #0f4b67 0%,
+    #214f6b 45%,
+    #405576 100%
+  );
+}
+
+/* ================================= */
+/* DOT PATTERN */
+/* ================================= */
+
+.reporting-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.13) 1px,
+      transparent 1px
+    );
+
+  background-size: 25px 25px;
+
+  opacity: 0.35;
+}
+
+/* ================================= */
+/* CONTENT */
+/* ================================= */
+
+.reporting-content {
+  position: relative;
+  z-index: 5;
+
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* ================================= */
+/* TAG */
+/* ================================= */
+
+.reporting-tag-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+
+.reporting-line {
+  width: 40px;
+  height: 1px;
+
+  background: rgba(239, 92, 114, 0.5);
+}
+
+.reporting-tag {
+  color: #ef5c72;
+
+  font-size: 13px;
+  font-weight: 700;
+
+  letter-spacing: 5px;
+}
+
+/* ================================= */
+/* TITLE */
+/* ================================= */
+
+.reporting-content h1 {
+  color: #fff;
+
+  font-size: 84px;
+  font-weight: 800;
+
+  line-height: 1.05;
+
+  margin-bottom: 30px;
+}
+
+.reporting-content h1 span {
+  color: #ef4e69;
+}
+
+/* ================================= */
+/* TEXT */
+/* ================================= */
+
+.reporting-content p {
+  max-width: 750px;
+  margin: 0 auto;
+
+  color: rgba(255,255,255,0.75);
+
+  font-size: 22px;
+  line-height: 1.7;
+}
+
+/* ================================= */
+/* TOP LEFT TRIANGLE */
+/* ================================= */
+
+.reporting-shape {
+  position: absolute;
+  z-index: 1;
+}
+
+.reporting-shape-left {
+  top: 0;
+  left: 0;
+
+  width: 120px;
+  height: 120px;
+
+  background: rgba(107, 88, 135, 0.35);
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    0 100%
+  );
+}
+
+/* ================================= */
+/* BOTTOM RIGHT TRIANGLE */
+/* ================================= */
+
+.reporting-shape-right {
+  right: 0;
+  bottom: 0;
+
+  width: 220px;
+  height: 220px;
+
+  background: rgba(239, 92, 114, 0.22);
+
+  clip-path: polygon(
+    100% 100%,
+    100% 0,
+    0 100%
+  );
+}
+
+/* ================================= */
+/* CIRCLE */
+/* ================================= */
+
+.reporting-circle {
+  position: absolute;
+
+  left: 50%;
+  bottom: -180px;
+
+  transform: translateX(-50%);
+
+  width: 380px;
+  height: 380px;
+
+  border-radius: 50%;
+
+  border: 1px solid rgba(
+    255,
+    255,
+    255,
+    0.06
+  );
+
+  z-index: 1;
+}
+
+/* ================================= */
+/* DESKTOP */
+/* ================================= */
+
+@media (max-width: 1200px) {
+  .reporting-content h1 {
+    font-size: 68px;
+  }
+
+  .reporting-content p {
+    font-size: 20px;
+  }
+}
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width: 992px) {
+
+  .reporting-hero {
+    min-height: 500px;
+  }
+
+  .reporting-content h1 {
+    font-size: 56px;
+  }
+
+  .reporting-content p {
+    font-size: 18px;
+  }
+
+  .reporting-circle {
+    width: 300px;
+    height: 300px;
+  }
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 768px) {
+
+  .reporting-hero {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+
+  .reporting-content h1 {
+    font-size: 42px;
+    line-height: 1.15;
+  }
+
+  .reporting-content p {
+    font-size: 16px;
+  }
+
+  .reporting-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .reporting-shape-left {
+    width: 70px;
+    height: 70px;
+  }
+
+  .reporting-shape-right {
+    width: 140px;
+    height: 140px;
+  }
+
+  .reporting-circle {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width: 480px) {
+
+  .reporting-hero {
+    padding: 70px 16px;
+  }
+
+  .reporting-content h1 {
+    font-size: 32px;
+  }
+
+  .reporting-content p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .reporting-line {
+    width: 24px;
+  }
+
+  .reporting-circle {
+    width: 170px;
+    height: 170px;
+  }
+
+  .reporting-shape-right {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+/* ================================= */
+/* EXTRA SMALL */
+/* ================================= */
+
+@media (max-width: 360px) {
+
+  .reporting-content h1 {
+    font-size: 26px;
+  }
+
+  .reporting-content p {
+    font-size: 14px;
+  }
+
+  .reporting-tag {
+    font-size: 10px;
+  }
+}

@@ -1,0 +1,150 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.live-demo {
+  background: #174b66;
+
+  padding: 90px 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+/* ========================= */
+/* CONTENT */
+/* ========================= */
+
+.live-demo-content {
+  max-width: 700px;
+  width: 100%;
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.live-demo-content h2 {
+  color: #ffffff;
+
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  margin-bottom: 30px;
+}
+
+/* ========================= */
+/* BUTTON */
+/* ========================= */
+
+.live-demo-btn {
+  border: none;
+  outline: none;
+
+  background: #de5f73;
+  color: white;
+
+  padding: 18px 36px;
+
+  border-radius: 14px;
+
+  font-size: 20px;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: all 0.3s ease;
+}
+
+.live-demo-btn:hover {
+  transform: translateY(-4px);
+
+  box-shadow:
+    0 12px 30px rgba(222, 95, 115, 0.35);
+}
+
+/* ========================= */
+/* LARGE LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .live-demo-content h2 {
+    font-size: 54px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .live-demo {
+    padding: 80px 20px;
+  }
+
+  .live-demo-content h2 {
+    font-size: 44px;
+  }
+
+  .live-demo-btn {
+    font-size: 18px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .live-demo {
+    padding: 70px 16px;
+  }
+
+  .live-demo-content h2 {
+    font-size: 36px;
+    margin-bottom: 24px;
+  }
+
+  .live-demo-btn {
+    width: 100%;
+    max-width: 320px;
+
+    padding: 16px 24px;
+
+    font-size: 16px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+  .live-demo-content h2 {
+    font-size: 30px;
+  }
+
+  .live-demo-btn {
+    max-width: 100%;
+    border-radius: 12px;
+  }
+}
+
+/* ========================= */
+/* EXTRA SMALL */
+/* ========================= */
+
+@media (max-width: 360px) {
+  .live-demo-content h2 {
+    font-size: 26px;
+  }
+
+  .live-demo-btn {
+    font-size: 15px;
+    padding: 14px 20px;
+  }
+}

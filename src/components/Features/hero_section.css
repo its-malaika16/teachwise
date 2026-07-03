@@ -1,0 +1,329 @@
+/* ================================= */
+/* HERO SECTION */
+/* ================================= */
+
+.features-hero {
+  position: relative;
+
+  overflow: hidden;
+
+  min-height: 620px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 100px 20px;
+
+  background:
+    radial-gradient(
+      circle at center,
+      rgba(255,255,255,0.04),
+      transparent 65%
+    ),
+    linear-gradient(
+      135deg,
+      #0f4660,
+      #2f4f70
+    );
+
+  color: white;
+}
+
+/* ================================= */
+/* DOTTED BACKGROUND */
+/* ================================= */
+
+.features-hero::before {
+  content: "";
+
+  position: absolute;
+  inset: 0;
+
+  background-image:
+    radial-gradient(
+      rgba(255,255,255,0.12) 1px,
+      transparent 1px
+    );
+
+  background-size: 26px 26px;
+
+  opacity: 0.35;
+}
+
+/* ================================= */
+/* CONTENT */
+/* ================================= */
+
+.features-hero-content {
+  position: relative;
+  z-index: 5;
+
+  max-width: 1200px;
+  text-align: center;
+}
+
+/* ================================= */
+/* TAG */
+/* ================================= */
+
+.hero-tag-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 16px;
+
+  margin-bottom: 30px;
+}
+
+.tag-line {
+  width: 42px;
+  height: 1px;
+
+  background: rgba(239, 85, 109, 0.5);
+}
+
+.hero-tag {
+  color: #ef556d;
+
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 4px;
+}
+
+/* ================================= */
+/* TITLE */
+/* ================================= */
+
+.features-hero h1 {
+  font-size: 86px;
+  line-height: 1.05;
+  font-weight: 800;
+
+  margin-bottom: 30px;
+}
+
+.features-hero h1 span {
+  color: #ef556d;
+}
+
+/* ================================= */
+/* DESCRIPTION */
+/* ================================= */
+
+.features-hero p {
+  max-width: 800px;
+  margin: 0 auto;
+
+  color: rgba(255,255,255,0.78);
+
+  font-size: 24px;
+  line-height: 1.7;
+}
+
+/* ================================= */
+/* DECORATIVE TRIANGLES */
+/* ================================= */
+
+.corner-shape {
+  position: absolute;
+  z-index: 1;
+}
+
+.corner-shape.left {
+  top: 0;
+  left: 0;
+
+  width: 120px;
+  height: 120px;
+
+  background: rgba(117, 86, 136, 0.3);
+
+  clip-path: polygon(
+    0 0,
+    100% 0,
+    0 100%
+  );
+}
+
+.corner-shape.right {
+  bottom: 0;
+  right: 0;
+
+  width: 260px;
+  height: 260px;
+
+  background: rgba(239, 85, 109, 0.2);
+
+  clip-path: polygon(
+    100% 100%,
+    100% 0,
+    0 100%
+  );
+}
+
+/* ================================= */
+/* CIRCLE */
+/* ================================= */
+
+.hero-circle {
+  position: absolute;
+
+  bottom: -180px;
+  left: 50%;
+
+  transform: translateX(-50%);
+
+  width: 430px;
+  height: 430px;
+
+  border-radius: 50%;
+  border: 1px solid rgba(
+    255,
+    255,
+    255,
+    0.08
+  );
+
+  z-index: 1;
+}
+
+/* ================================= */
+/* XL SCREENS */
+/* ================================= */
+
+@media (max-width: 1400px) {
+  .features-hero h1 {
+    font-size: 72px;
+  }
+}
+
+/* ================================= */
+/* LAPTOP */
+/* ================================= */
+
+@media (max-width: 1200px) {
+  .features-hero h1 {
+    font-size: 64px;
+  }
+
+  .features-hero p {
+    font-size: 21px;
+  }
+}
+
+/* ================================= */
+/* TABLET */
+/* ================================= */
+
+@media (max-width: 992px) {
+  .features-hero {
+    min-height: 500px;
+    padding: 90px 30px;
+  }
+
+  .features-hero h1 {
+    font-size: 54px;
+  }
+
+  .features-hero p {
+    font-size: 18px;
+  }
+
+  .hero-circle {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+/* ================================= */
+/* MOBILE */
+/* ================================= */
+
+@media (max-width: 768px) {
+  .features-hero {
+    min-height: auto;
+    padding: 80px 20px;
+  }
+
+  .features-hero h1 {
+    font-size: 40px;
+    line-height: 1.15;
+  }
+
+  .features-hero p {
+    font-size: 16px;
+  }
+
+  .hero-tag {
+    font-size: 11px;
+    letter-spacing: 3px;
+  }
+
+  .corner-shape.left {
+    width: 70px;
+    height: 70px;
+  }
+
+  .corner-shape.right {
+    width: 170px;
+    height: 170px;
+  }
+
+  .hero-circle {
+    width: 240px;
+    height: 240px;
+  }
+}
+
+/* ================================= */
+/* SMALL MOBILE */
+/* ================================= */
+
+@media (max-width: 480px) {
+  .features-hero {
+    padding: 70px 16px;
+  }
+
+  .features-hero h1 {
+    font-size: 32px;
+  }
+
+  .features-hero p {
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  .tag-line {
+    width: 24px;
+  }
+
+  .corner-shape.right {
+    width: 120px;
+    height: 120px;
+  }
+
+  .hero-circle {
+    width: 180px;
+    height: 180px;
+  }
+}
+
+/* ================================= */
+/* EXTRA SMALL */
+/* ================================= */
+
+@media (max-width: 360px) {
+  .features-hero h1 {
+    font-size: 26px;
+  }
+
+  .features-hero p {
+    font-size: 14px;
+  }
+
+  .hero-tag {
+    font-size: 10px;
+  }
+}

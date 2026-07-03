@@ -1,0 +1,253 @@
+/* ========================= */
+/* SECTION */
+/* ========================= */
+
+.modules-section {
+  background: #f8f7f5;
+  padding: 100px 20px;
+}
+
+/* ========================= */
+/* HEADER */
+/* ========================= */
+
+.modules-header {
+  max-width: 900px;
+  margin: 0 auto 70px;
+  text-align: center;
+}
+
+.modules-header h2 {
+  color: #0f3b57;
+
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 1.1;
+
+  margin-bottom: 18px;
+}
+
+.modules-header p {
+  color: #6f8594;
+
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+/* ========================= */
+/* GRID */
+/* ========================= */
+
+.modules-grid {
+  max-width: 1250px;
+  margin: auto;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+/* ========================= */
+/* CARD */
+/* ========================= */
+
+.module-card {
+  background: white;
+
+  border: 1px solid #d8e1e7;
+  border-radius: 18px;
+
+  padding: 30px;
+
+  transition: all 0.3s ease;
+}
+
+.module-card:hover {
+  transform: translateY(-6px);
+
+  border-color: #ef6077;
+
+  box-shadow:
+    0 15px 30px rgba(239, 96, 119, 0.12);
+}
+
+/* ========================= */
+/* TITLE */
+/* ========================= */
+
+.module-card h3 {
+  color: #0f3b57;
+
+  font-size: 36px;
+  font-weight: 700;
+
+  margin-bottom: 24px;
+}
+
+/* ========================= */
+/* LIST */
+/* ========================= */
+
+.module-card ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.module-card li {
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  margin-bottom: 16px;
+
+  color: #607a8b;
+  font-size: 19px;
+  line-height: 1.6;
+}
+
+.check-circle {
+  width: 22px;
+  height: 22px;
+
+  border-radius: 50%;
+  border: 1.5px solid #ef6077;
+
+  color: #ef6077;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 12px;
+  font-weight: 700;
+
+  flex-shrink: 0;
+}
+
+/* ========================= */
+/* LARGE LAPTOP */
+/* ========================= */
+
+@media (max-width: 1200px) {
+  .modules-header h2 {
+    font-size: 54px;
+  }
+
+  .module-card h3 {
+    font-size: 30px;
+  }
+
+  .module-card li {
+    font-size: 17px;
+  }
+}
+
+/* ========================= */
+/* TABLET */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .modules-section {
+    padding: 80px 20px;
+  }
+
+  .modules-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .modules-header h2 {
+    font-size: 44px;
+  }
+
+  .modules-header p {
+    font-size: 18px;
+  }
+}
+
+/* ========================= */
+/* MOBILE */
+/* ========================= */
+
+@media (max-width: 768px) {
+  .modules-section {
+    padding: 70px 16px;
+  }
+
+  .modules-header {
+    margin-bottom: 50px;
+  }
+
+  .modules-header h2 {
+    font-size: 34px;
+  }
+
+  .modules-header p {
+    font-size: 16px;
+  }
+
+  .module-card {
+    padding: 24px;
+  }
+
+  .module-card h3 {
+    font-size: 24px;
+  }
+
+  .module-card li {
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  .check-circle {
+    width: 20px;
+    height: 20px;
+    font-size: 11px;
+  }
+}
+
+/* ========================= */
+/* SMALL MOBILE */
+/* ========================= */
+
+@media (max-width: 480px) {
+
+  .modules-header h2 {
+    font-size: 28px;
+  }
+
+  .modules-header p {
+    font-size: 15px;
+  }
+
+  .module-card {
+    padding: 20px;
+  }
+
+  .module-card h3 {
+    font-size: 22px;
+  }
+
+  .module-card li {
+    font-size: 14px;
+  }
+}
+
+/* ========================= */
+/* EXTRA SMALL */
+/* ========================= */
+
+@media (max-width: 360px) {
+  .modules-header h2 {
+    font-size: 24px;
+  }
+
+  .module-card h3 {
+    font-size: 20px;
+  }
+
+  .module-card li {
+    font-size: 13px;
+  }
+}
