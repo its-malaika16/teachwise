@@ -19,7 +19,7 @@ export default function ReportingSection() {
       <div className="reporting-container">
 
         {/* LEFT */}
-        <div className="reporting-content">
+        <div className="reporting-content-home">
 
           <span className="reporting-tag">
             MANAGEMENT INFORMATION

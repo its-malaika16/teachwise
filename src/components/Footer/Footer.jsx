@@ -127,12 +127,12 @@ export default function Footer() {
 
           <div className="footer-contact-item">
             <MailIcon />
-            <span>hello@teachwise.co.uk</span>
+            <span>info@teachwise.co.uk</span>
           </div>
 
           <div className="footer-contact-item">
             <PhoneIcon />
-            <span>+44 (0) 1706 000 000</span>
+            <span>+44 20 3970 3050</span>
           </div>
         </div>
 

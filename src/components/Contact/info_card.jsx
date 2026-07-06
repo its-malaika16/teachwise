@@ -31,12 +31,12 @@ const contactData = [
   {
     icon: <MailIcon />,
     title: "Email",
-    text: "hello@teachwise.co.uk",
+    text: "info@teachwise.co.uk",
   },
   {
     icon: <PhoneIcon />,
     title: "Phone",
-    text: "+44 (0)1706 000 000",
+    text: "+44 20 3970 3050",
   },
   {
     icon: <LocationIcon />,

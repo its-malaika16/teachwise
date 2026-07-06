@@ -32,6 +32,10 @@ export default function Navbar() {
       {/* LINKS */}
       <div className={`nav-menu ${menuOpen ? "active" : ""}`}>
 
+        <NavLink to="/" onClick={closeMenu}>
+          Home
+        </NavLink>
+
         <NavLink to="/services" onClick={closeMenu}>
           Services
         </NavLink>

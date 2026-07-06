@@ -1,4 +1,5 @@
 import "./home_hero.css";
+import { Link } from "react-router-dom";
 
 export default function HeroSection() {
   return (
@@ -33,13 +34,21 @@ export default function HeroSection() {
 
         <div className="hero-buttons">
 
-          <button className="primary-btn">
-            Request a Free Demo
-          </button>
+          
+<div className="hero-buttons">
+  <Link to="/contact">
+    <button className="primary-btn">
+      Request a Free Demo
+    </button>
+  </Link>
 
-          <button className="secondary-btn">
-            Learn More
-          </button>
+  <Link to="/features">
+    <button className="secondary-btn">
+      Learn More
+    </button>
+  </Link>
+</div>
+
 
         </div>
 
