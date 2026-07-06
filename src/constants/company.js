@@ -1,11 +1,11 @@
 export const COMPANY = {
-  name: "Cedar Capital Payroll",
+  name: "Teachwise",
 
-  email: "Support@cedarpayroll.com",
+  email: "info@teachwise.co.uk",
 
-  phone: "+971 50 429 4194",
+  phone: "+44 20 3970 3050",
 
-  address: "Dubai: Blue Bay Tower, Business Bay, Dubai, United Arab Emirates | Beirut: Gauche Rive Tower, Floor 10, Achrafieh, Beirut, Lebanon | Delaware: 501 Silverside Rd, Ste 105-1545, Wilmington, Delaware 19809, USA | Manchester: The Point Building, 173-175 Cheetham Hill Rd, Manchester M8 8LG",
+  address: "1 Quality Court, Chancery Lane, London WC2A 1HR",
 
 
   description:
