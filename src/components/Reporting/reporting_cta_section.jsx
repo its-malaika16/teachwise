@@ -1,4 +1,5 @@
 import "./reporting_cta_section.css";
+import { Link } from "react-router-dom";
 
 export default function ReportingDemoCTA() {
   return (
@@ -13,11 +14,11 @@ export default function ReportingDemoCTA() {
           We'll load sample data that mirrors your business
           so you can explore the dashboards that matter to you.
         </p>
-
-        <button className="reporting-demo-btn">
-          Request a reporting demo
-        </button>
-
+        <Link to="/contact">
+          <button className="reporting-demo-btn">
+            Request a reporting demo
+          </button>
+        </Link>
       </div>
     </section>
   );

@@ -1,4 +1,5 @@
 import "./CTASection.css";
+import { Link } from "react-router-dom";
 
 export default function CTASection() {
   return (
@@ -15,9 +16,12 @@ export default function CTASection() {
           team and turn around a shortlist in hours, not weeks.
         </p>
 
-        <button className="cta-btn">
-          Talk to a specialist
-        </button>
+        <Link to="/contact">
+          <button className="cta-btn">
+            Talk to a specialist
+          </button>
+        </Link>
+
 
       </div>
 

@@ -1,4 +1,5 @@
 import "./integration_section.css";
+import { Link } from "react-router-dom";
 
 const integrations = [
   "Xero",
@@ -38,9 +39,11 @@ export default function IntegrationsSection() {
         </div>
 
         <div className="integrations-btn-wrapper">
+          <Link to="/contact">
           <button className="integrations-btn">
             Request a feature demo
           </button>
+          </Link>
         </div>
 
       </div>

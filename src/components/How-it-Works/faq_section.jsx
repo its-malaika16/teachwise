@@ -1,4 +1,5 @@
 import "./faq_section.css";
+import { Link } from "react-router-dom";
 
 const faqs = [
   {
@@ -48,9 +49,11 @@ export default function FAQSection() {
         </div>
 
         <div className="faq-btn-wrapper">
+          <Link to="/contact">
           <button className="faq-btn">
             Ask us anything
           </button>
+          </Link>
         </div>
 
       </div>

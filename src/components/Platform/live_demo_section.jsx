@@ -1,4 +1,5 @@
 import "./live_demo_section.css";
+import { Link } from "react-router-dom";
 
 export default function LiveDemoCTA() {
   return (
@@ -8,10 +9,11 @@ export default function LiveDemoCTA() {
 
         <h2>See it in action</h2>
 
-        <button className="live-demo-btn">
-          Book a live walkthrough
-        </button>
-
+        <Link to="/contact">
+          <button className="live-demo-btn">
+            Book a live walkthrough
+          </button>
+        </Link>
       </div>
 
     </section>
