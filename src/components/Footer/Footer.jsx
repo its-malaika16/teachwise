@@ -1,4 +1,5 @@
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const LinkedInIcon = () => (
   <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -90,72 +91,74 @@ export default function Footer() {
             <div className="footer-column">
               <h4>Company</h4>
 
-              <a href="/">Home</a>
-              <a href="/services">Services</a>
-              <a href="/how-it-works">How It Works</a>
-              <a href="/contact">Contact</a>
+
+              <Link to="/">Home</Link>
+              <Link to="/services">Services</Link>
+              <Link to="/how-it-works">How It Works</Link>
+              <Link to="/contact">Contact</Link>
+
             </div>
 
             <div className="footer-column">
               <h4>Platform</h4>
 
-              <a href="/platform">Overview</a>
-              <a href="/features">Features</a>
-              <a href="/reporting">Reporting</a>
-              <a href="/demo">Book a Demo</a>
+              <Link to="/platform">Overview</Link>
+              <Link to="/features">Features</Link>
+              <Link to="/reporting">Reporting</Link>
+              <a href="/contact">Book a Demo</a>
             </div>
 
-            <div className="footer-column">
-              <h4>Services</h4>
+          <div className="footer-column">
+            <h4>Services</h4>
 
-              <a href="#">General Recruitment</a>
-              <a href="#">Education</a>
-              <a href="#">Restaurants</a>
-              <a href="#">Executive Search</a>
-            </div>
-          </div>
-        </div>
-
-        {/* CONTACT BAR */}
-        <div className="footer-contact-bar">
-          <div className="footer-contact-item">
-            <LocationIcon />
-            <span>
-              465 Oldham Rd, Rochdale, OL16 4TD, United Kingdom
-            </span>
-          </div>
-
-          <div className="footer-contact-item">
-            <MailIcon />
-            <span>info@teachwise.co.uk</span>
-          </div>
-
-          <div className="footer-contact-item">
-            <PhoneIcon />
-            <span>+44 20 3970 3050</span>
-          </div>
-        </div>
-
-        {/* BOTTOM */}
-        <div className="footer-bottom">
-          <p>
-            © 2026 TW Education Limited · Company number 13663224. All rights
-            reserved.
-          </p>
-
-          <div className="footer-bottom-links">
-            <a href="/privacy-policy">Privacy Policy</a>
-            <a href="/terms">Terms & Conditions</a>
-            <a
-              href="https://www.teachwise.co.uk"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              www.teachwise.co.uk
-            </a>
+            <a href="#">General Recruitment</a>
+            <a href="#">Education</a>
+            <a href="#">Restaurants</a>
+            <a href="#">Executive Search</a>
           </div>
         </div>
       </div>
-    </footer>
+
+      {/* CONTACT BAR */}
+      <div className="footer-contact-bar">
+        <div className="footer-contact-item">
+          <LocationIcon />
+          <span>
+            465 Oldham Rd, Rochdale, OL16 4TD, United Kingdom
+          </span>
+        </div>
+
+        <div className="footer-contact-item">
+          <MailIcon />
+          <span>info@teachwise.co.uk</span>
+        </div>
+
+        <div className="footer-contact-item">
+          <PhoneIcon />
+          <span>+44 20 3970 3050</span>
+        </div>
+      </div>
+
+      {/* BOTTOM */}
+      <div className="footer-bottom">
+        <p>
+          © 2026 TW Education Limited · Company number 13663224. All rights
+          reserved.
+        </p>
+
+        <div className="footer-bottom-links">
+          <a href="/privacy-policy">Privacy Policy</a>
+          <a href="/terms">Terms & Conditions</a>
+          <a
+            href="https://www.teachwise.co.uk"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            www.teachwise.co.uk
+          </a>
+        </div>
+      </div>
+    </div>
+    </footer >
   );
 }

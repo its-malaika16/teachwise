@@ -68,7 +68,7 @@ export default function Navbar() {
           Request Demo
         </NavLink>
 
-      </div>
+      </div> 
 
       {/* DESKTOP CTA */}
       <NavLink to="/contact" className="nav-cta desktop-cta">
