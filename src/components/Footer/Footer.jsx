@@ -142,8 +142,7 @@ export default function Footer() {
       {/* BOTTOM */}
       <div className="footer-bottom">
         <p>
-          © 2026 TW Education Limited · Company number 13663224. All rights
-          reserved.
+          © 2026 TW Education Limited . All rights reserved.
         </p>
 
         <div className="footer-bottom-links">
