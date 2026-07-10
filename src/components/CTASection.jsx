@@ -12,7 +12,7 @@ export default function CTASection() {
         </h2>
 
         <p>
-          Tell us about the role — we'll recommend the right
+          Tell us about the role we'll recommend the right
           team and turn around a shortlist in hours, not weeks.
         </p>
 

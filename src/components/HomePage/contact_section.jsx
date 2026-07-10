@@ -20,9 +20,9 @@ export default function ContactSection() {
           <h2>Get in Touch Today</h2>
 
           <p>
-            Whatever your sector — recruitment,
+            Whatever your sector recruitment,
             hospitality, restaurants, office staff,
-            or executive search — tell us what you
+            or executive search tell us what you
             need and we'll be in touch.
           </p>
 

@@ -128,7 +128,7 @@ export default function ServicesSection() {
     <section className="services-section">
 
       <div className="services-header">
-        <span className="small-title">OUR SERVICES</span>
+        <span className="small-title subheading">OUR SERVICES</span>
 
         <h2>Recruitment Across Every Sector</h2>
 

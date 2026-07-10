@@ -14,14 +14,14 @@ export default function HeroSection() {
       {/* Content */}
       <div className="hero-content">
 
-        <span className="hero-tag">
+        <span className="hero-tag subheading">
           Technology for Schools
         </span>
 
         <h1 className="hero-title">
           Streamline Your
           <br />
-          <span>Recruitment</span>
+          <span className="sub-text">Recruitment</span>
           <br />
           Process
         </h1>

@@ -63,7 +63,7 @@ export default function Footer() {
             </div>
 
             <p>
-              Specialist recruitment powered by purpose-built technology —
+              Specialist recruitment powered by purpose-built technology
               connecting talent with employers across education, hospitality,
               restaurants, office and executive search.
             </p>

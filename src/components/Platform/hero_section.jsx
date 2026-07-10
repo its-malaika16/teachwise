@@ -14,7 +14,7 @@ export default function PlatformHero() {
         <div className="platform-tag-wrapper">
           <span className="tag-line"></span>
 
-          <span className="platform-tag">
+          <span className="platform-tag subheading">
             THE PLATFORM
           </span>
 
@@ -24,13 +24,13 @@ export default function PlatformHero() {
         <h1 className="platform-title">
           Software and mobile
           <br />
-          apps <span>built for</span>
+          apps <span className="sub-text">built for</span>
           <br />
-          <span>recruitment</span>
+          <span className="sub-text">recruitment</span>
         </h1>
 
         <p className="platform-description">
-          Cloud-first, mobile-ready, secure by design —
+          Cloud-first, mobile-ready, secure by design
           everything your team needs in one connected
           workspace.
         </p>

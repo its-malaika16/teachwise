@@ -9,7 +9,7 @@ export default function PlatformSection() {
         {/* LEFT */}
         <div className="platform-text">
 
-          <span className="section-tag">
+          <span className="section-tag subheading">
             OUR PLATFORM
           </span>
 
@@ -22,14 +22,14 @@ export default function PlatformSection() {
           <p>
             The software uses specialist education technology to
             provide you with everything you need to efficiently
-            connect with and manage supply staff — from vacancy
+            connect with and manage supply staff from vacancy
             creation and timesheet approval to invoicing and
             self-billing.
           </p>
 
           <p>
             Submit a job posting, match it to our candidate
-            database and communicate the assignment to them —
+            database and communicate the assignment to them
             filling your vacancies quickly and efficiently.
           </p>
 

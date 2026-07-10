@@ -43,7 +43,7 @@ export default function ComparisonSection() {
     <section className="comparison-section">
 
       <div className="comparison-header">
-        <span className="comparison-tag">
+        <span className="comparison-tag subheading">
           WHY TEACHWISE?
         </span>
 

@@ -171,7 +171,7 @@ export default function FeatureSection() {
 
       <div className="talent-features-header">
 
-        <span className="talent-features-tag">
+        <span className="talent-features-tag subheading">
           TALENT & AGENCY MANAGEMENT
         </span>
 
@@ -183,7 +183,7 @@ export default function FeatureSection() {
 
         <p>
           Easy to implement, even easier to use. Manage agency workers,
-          PSC workers and your own talent bank — all from one platform.
+          PSC workers and your own talent bank all from one platform.
         </p>
 
       </div>
@@ -198,7 +198,7 @@ export default function FeatureSection() {
               {feature.icon}
             </div>
 
-            <h3>{feature.title}</h3>
+            <h4>{feature.title}</h4>
 
             <p>{feature.description}</p>
           </div>

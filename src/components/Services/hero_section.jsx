@@ -14,7 +14,7 @@ export default function ServicesHero() {
         <div className="services-tag-wrapper">
           <span className="line"></span>
 
-          <span className="services-tag">
+          <span className="services-tag subheading">
             OUR SERVICES
           </span>
 
@@ -24,11 +24,11 @@ export default function ServicesHero() {
         <h1>
           Specialist recruitment
           <br />
-          across <span>five sectors</span>
+          across <span className="sub-text">five sectors</span>
         </h1>
 
         <p>
-          From classroom cover to executive search —
+          From classroom cover to executive search
           one partner, one platform, and a shortlist
           ready in hours.
         </p>

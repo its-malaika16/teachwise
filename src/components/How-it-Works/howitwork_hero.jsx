@@ -13,7 +13,7 @@ export default function HowItWorksHero() {
         <div className="how-hero-tag-wrapper">
           <span className="how-line"></span>
 
-          <span className="how-hero-tag">
+          <span className="how-hero-tag subheading">
             HOW IT WORKS
           </span>
 
@@ -23,12 +23,12 @@ export default function HowItWorksHero() {
         <h1>
           From sign-up to live in
           <br />
-          <span>under a week</span>
+          <span className="sub-text">under a week</span>
         </h1>
 
         <p>
           A guided onboarding, hands-on training and a
-          dedicated success manager — so your team hits
+          dedicated success manager so your team hits
           the ground running.
         </p>
 

@@ -37,7 +37,7 @@ const features = [
     icon: <MobileIcon />,
     title: "Mobile ready",
     description:
-      "Native-quality apps for candidates and clients — accept bookings, upload documents, message in-app.",
+      "Native-quality apps for candidates and clients accept bookings, upload documents, message in-app.",
   },
   {
     icon: <LockIcon />,

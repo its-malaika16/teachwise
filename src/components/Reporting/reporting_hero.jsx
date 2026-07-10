@@ -13,7 +13,7 @@ export default function ReportingHero() {
         <div className="reporting-tag-wrapper">
           <span className="reporting-line"></span>
 
-          <span className="reporting-tag">
+          <span className="reporting-tag subheading">
             REPORTING & INSIGHTS
           </span>
 
@@ -22,14 +22,14 @@ export default function ReportingHero() {
 
         <h1>
           Real-time analysis
-          <span> you</span>
+          <span className="sub-text"> you</span>
           <br />
-          <span>can act on</span>
+          <span className="sub-text">can act on</span>
         </h1>
 
         <p>
           Live dashboards, compliance heat-maps and margin
-          reports — the whole business, one screen.
+          reports the whole business, one screen.
         </p>
 
       </div>

@@ -14,7 +14,7 @@ export default function ContactHero() {
         <div className="contact-tag-wrapper">
           <span className="contact-line"></span>
 
-          <span className="contact-tag">
+          <span className="contact-tag subheading">
             CONTACT
           </span>
 
@@ -22,12 +22,12 @@ export default function ContactHero() {
         </div>
 
         <h1>
-          Let's <span>talk</span>
+          Let's <span className="sub-text">talk</span>
         </h1>
 
         <p>
           Whether you're hiring, exploring the platform,
-          or joining our talent pool — we'd love to hear
+          or joining our talent pool we'd love to hear
           from you.
         </p>
 

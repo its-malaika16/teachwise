@@ -22,7 +22,7 @@ export default function IntegrationsSection() {
           <h2>Integrations</h2>
 
           <p>
-            Teachwise plays nicely with the tools you already use —
+            Teachwise plays nicely with the tools you already use
             payroll, accounting, calendar and identity providers.
           </p>
         </div>

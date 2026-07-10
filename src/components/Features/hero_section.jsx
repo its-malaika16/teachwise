@@ -14,7 +14,7 @@ export default function FeaturesHero() {
         <div className="hero-tag-wrapper">
           <span className="tag-line"></span>
 
-          <span className="hero-tag">
+          <span className="hero-tag subheading">
             FEATURES
           </span>
 
@@ -24,11 +24,11 @@ export default function FeaturesHero() {
         <h1>
           Every tool your
           <br />
-          <span>recruitment team</span> needs
+          <span className="sub-text">recruitment team</span> needs
         </h1>
 
         <p>
-          Bookings, compliance, finance and insights —
+          Bookings, compliance, finance and insights
           connected modules that eliminate double entry
           and manual admin.
         </p>

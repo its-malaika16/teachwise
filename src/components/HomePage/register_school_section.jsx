@@ -32,14 +32,14 @@ export default function RegisterSchool() {
     <section className="register-section">
 
       <div className="register-header">
-        <span className="register-tag">
+        <span className="register-tag subheading">
           REGISTER YOUR SCHOOL
         </span>
 
         <h2>Getting Started Is Easy</h2>
 
         <p>
-          It's quick and simple — we just need your email to get started.
+          It's quick and simple we just need your email to get started.
         </p>
       </div>
 
