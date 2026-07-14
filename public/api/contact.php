@@ -86,7 +86,7 @@ $stmt->bind_param(
 if ($stmt->execute()) {
 
     // Send notification email
-    $to = "support@phoeniciacapital.co.uk";
+    $to = "info@teachwise.co.uk";
     $subject = "New Website Enquiry";
 
     $message = "
