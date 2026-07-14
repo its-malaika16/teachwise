@@ -1,4 +1,5 @@
 import "./contact_section.css";
+import { useState } from "react";
 import {
   Phone,
   Mail,
@@ -6,6 +7,61 @@ import {
 } from "lucide-react";
 
 export default function ContactSection() {
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    company: "",
+    description: "",
+  });
+
+  const [loading, setLoading] = useState(false);
+
+  const handleChange = (e) => {
+    setFormData((prev) => ({
+      ...prev,
+      [e.target.name]: e.target.value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    setLoading(true);
+
+    try {
+      const response = await fetch(
+        "https://teachwise.co.uk/api/contact.php",
+        {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(formData),
+        }
+      );
+
+      const result = await response.json();
+
+      if (result.success) {
+        alert("Enquiry sent successfully!");
+
+        setFormData({
+          name: "",
+          email: "",
+          company: "",
+          description: "",
+        });
+      } else {
+        alert(result.message);
+      }
+    } catch (error) {
+      console.error(error);
+      alert("Something went wrong.");
+    }
+
+    setLoading(false);
+  };
+
   return (
     <section className="contact-section">
       <div className="contact-overlay"></div>
@@ -28,13 +84,14 @@ export default function ContactSection() {
 
           <form
             className="contact-form"
-            action="https://formsubmit.co/info@teachwise.co.uk"
-            method="POST"
+            onSubmit={handleSubmit}
           >
             <input
               type="text"
               name="name"
               placeholder="Your Name"
+              value={formData.name}
+              onChange={handleChange}
               required
             />
 
@@ -42,56 +99,37 @@ export default function ContactSection() {
               type="email"
               name="email"
               placeholder="Email Address"
+              value={formData.email}
+              onChange={handleChange}
               required
             />
 
             <input
               type="text"
               name="company"
-              placeholder="Company / Organisation (optional)"
+              placeholder="Company / Organisation"
+              value={formData.company}
+              onChange={handleChange}
+              required
             />
 
             <textarea
-              name="message"
+              name="description"
               rows="5"
-              placeholder="Tell us what you're looking for (optional)"
+              placeholder="Tell us what you're looking for"
+              value={formData.description}
+              onChange={handleChange}
             />
 
-            {/* Email Subject */}
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Website Enquiry"
-            />
-
-            {/* Disable FormSubmit captcha */}
-            <input
-              type="hidden"
-              name="_captcha"
-              value="false"
-            />
-
-            {/* Optional auto-response */}
-            <input
-              type="hidden"
-              name="_autoresponse"
-              value="Thank you for contacting Teachwise. We have received your enquiry and will get back to you shortly."
-            />
-
-            {/* Optional redirect page after submit */}
-            <input
-              type="hidden"
-              name="_next"
-              value="https://teachwise.co.uk/thank-you"
-            />
-
-            <button type="submit">
-              Send Enquiry
+            <button
+              type="submit"
+              disabled={loading}
+            >
+              {loading ? "Sending..." : "Send Enquiry"}
             </button>
           </form>
 
           <div className="contact-details">
-
             <div className="contact-item">
               <Phone size={15} />
               <span>0203 970 3050</span>
@@ -101,12 +139,10 @@ export default function ContactSection() {
               <Mail size={15} />
               <span>info@teachwise.co.uk</span>
             </div>
-
           </div>
 
           <div className="contact-address">
             <MapPin size={15} />
-
             <span>
               1 Quality Court, Chancery Lane,
               London WC2A 1HR
