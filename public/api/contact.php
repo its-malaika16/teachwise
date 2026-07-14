@@ -39,7 +39,7 @@ $description = trim($data["description"] ?? "");
 if (
     empty($name) ||
     empty($email) ||
-    empty($company) ||
+    empty($company) 
 ) {
     http_response_code(400);
     echo json_encode([
